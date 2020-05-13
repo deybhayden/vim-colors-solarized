@@ -624,6 +624,9 @@ elseif  (g:solarized_diffmode=="low")
 exe "hi! DiffAdd"        .s:fmt_undr   .s:fg_green  .s:bg_none   .s:sp_green
 exe "hi! DiffChange"     .s:fmt_undr   .s:fg_yellow .s:bg_none   .s:sp_yellow
 exe "hi! DiffDelete"     .s:fmt_bold   .s:fg_red    .s:bg_none
+exe "hi! GitGutterAdd"   .s:fmt_none   .s:fg_green  .s:bg_none   .s:sp_green
+exe "hi! GitGutterChange".s:fmt_none   .s:fg_yellow .s:bg_none   .s:sp_yellow
+exe "hi! GitGutterDelete".s:fmt_none   .s:fg_red    .s:bg_none
 exe "hi! DiffText"       .s:fmt_undr   .s:fg_blue   .s:bg_none   .s:sp_blue
 else " normal
     if has("gui_running")
